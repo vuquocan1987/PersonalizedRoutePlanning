@@ -1,0 +1,25 @@
+neo4j-admin database load --from-path=./neo4j.dump neo4j --overwrite-destination=true
+neo4j-admin database load --from-path=/var/lib/neo4j/data/neo4j.dump neo4j --overwrite-destination=true
+neo4j-admin database load --from-path=/var/lib/neo4j/data/ tmp --overwrite-destination=true
+
+
+docker run \
+    --publish=7474:7474 --publish=7687:7687 \
+    --volume=$HOME/neo4j/data:/data \
+    neo4j
+
+
+docker run --interactive --tty --rm \
+    --volume=$HOME/neo4j/data:/data \
+    --volume=$HOME/neo4j/data:/backups \
+    neo4j \
+neo4j-admin database load neo4j --from-path=/backups
+
+docker run --interactive --tty --rm \
+    --volume=$HOME/neo4j/data:/data \
+    --volume=$HOME/neo4j:/backups \
+    neo4j \
+neo4j-admin database load tmp --from-path=/backups
+
+
+

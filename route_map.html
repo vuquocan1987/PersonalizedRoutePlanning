@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6de4542f628dea1656893d9b9797eb76 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6de4542f628dea1656893d9b9797eb76" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6de4542f628dea1656893d9b9797eb76 = L.map(
+                "map_6de4542f628dea1656893d9b9797eb76",
+                {
+                    center: [65.062795, 25.472358],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ace7c83e15accf0fdcc217615817e04d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ace7c83e15accf0fdcc217615817e04d.addTo(map_6de4542f628dea1656893d9b9797eb76);
+        
+    
+
+        function geo_json_f70219282367e7df75ab71627067feb3_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f70219282367e7df75ab71627067feb3 = L.geoJson(null, {
+                onEachFeature: geo_json_f70219282367e7df75ab71627067feb3_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_f70219282367e7df75ab71627067feb3_add (data) {
+            geo_json_f70219282367e7df75ab71627067feb3
+                .addData(data);
+        }
+            geo_json_f70219282367e7df75ab71627067feb3_add({"bbox": [25.446377, 65.011398, 25.508166, 65.062788], "geometry": {"coordinates": [[25.472358, 65.062788], [25.472329, 65.062788], [25.471134, 65.06278], [25.469962, 65.062779], [25.467497, 65.06278], [25.46606, 65.062779], [25.464408, 65.062768], [25.463618, 65.062719], [25.462682, 65.062631], [25.461645, 65.062472], [25.459622, 65.062155], [25.459246, 65.062084], [25.458561, 65.061986], [25.458383, 65.06201], [25.458263, 65.061998], [25.458166, 65.06196], [25.458116, 65.061897], [25.458167, 65.061827], [25.458308, 65.061783], [25.458393, 65.061777], [25.45863, 65.061634], [25.458746, 65.061521], [25.458718, 65.060454], [25.458721, 65.059653], [25.458746, 65.057971], [25.458747, 65.057514], [25.458725, 65.056658], [25.458699, 65.056375], [25.458683, 65.056024], [25.4586, 65.055918], [25.458356, 65.055879], [25.457498, 65.055872], [25.455536, 65.055802], [25.45464, 65.055753], [25.453938, 65.0557], [25.452532, 65.055539], [25.451909, 65.055463], [25.450437, 65.055314], [25.449421, 65.055247], [25.448673, 65.055232], [25.447919, 65.05524], [25.4472, 65.055266], [25.446602, 65.055324], [25.446377, 65.055347], [25.446391, 65.055218], [25.446423, 65.054964], [25.446487, 65.054685], [25.446593, 65.054529], [25.446771, 65.054405], [25.447005, 65.05429], [25.447588, 65.05416], [25.449127, 65.053937], [25.449856, 65.053761], [25.450625, 65.053506], [25.452052, 65.052886], [25.452903, 65.052471], [25.453463, 65.052154], [25.454169, 65.051825], [25.456137, 65.05059], [25.46403, 65.045637], [25.466609, 65.044148], [25.467938, 65.043433], [25.469787, 65.042538], [25.471888, 65.041617], [25.473504, 65.040971], [25.473954, 65.040792], [25.475891, 65.040042], [25.47815, 65.03918], [25.480865, 65.038056], [25.484285, 65.036575], [25.490153, 65.033777], [25.492308, 65.032918], [25.494233, 65.032254], [25.498103, 65.030941], [25.498906, 65.030669], [25.499386, 65.030499], [25.500388, 65.03012], [25.502406, 65.029308], [25.503522, 65.028805], [25.504176, 65.028467], [25.504786, 65.028124], [25.505279, 65.02781], [25.506188, 65.027114], [25.506666, 65.026649], [25.506945, 65.026371], [25.507384, 65.025805], [25.507639, 65.025406], [25.507989, 65.024604], [25.508147, 65.023855], [25.508164, 65.023408], [25.508158, 65.023238], [25.508166, 65.021896], [25.508157, 65.021343], [25.50815, 65.020745], [25.508038, 65.019358], [25.507795, 65.018094], [25.507194, 65.015705], [25.507003, 65.015076], [25.506777, 65.014803], [25.506598, 65.01438], [25.506343, 65.013907], [25.506075, 65.013523], [25.505623, 65.01304], [25.505241, 65.012703], [25.504749, 65.012295], [25.504291, 65.011962], [25.504057, 65.011838], [25.502018, 65.011729], [25.501045, 65.011672], [25.497293, 65.011469], [25.496256, 65.011421], [25.494804, 65.011398], [25.494527, 65.011407], [25.493441, 65.01144], [25.492442, 65.011509], [25.491926, 65.011569], [25.491188, 65.011667], [25.48966, 65.011969], [25.488885, 65.012137], [25.488268, 65.01229], [25.487892, 65.012413], [25.487616, 65.01253], [25.487356, 65.012645], [25.486807, 65.012834], [25.486288, 65.01299], [25.485939, 65.013096], [25.485768, 65.013141], [25.483787, 65.013673], [25.481825, 65.014204], [25.481738, 65.014111], [25.481958, 65.014069], [25.485516, 65.013092]], "type": "LineString"}, "properties": {"segments": [{"distance": 9315.7, "duration": 786.9, "steps": [{"distance": 661.6, "duration": 72.7, "instruction": "Head west on Kaitov\u00e4yl\u00e4", "name": "Kaitov\u00e4yl\u00e4", "type": 11, "way_points": [0, 12]}, {"distance": 705.4, "duration": 93.8, "exit_number": 3, "instruction": "Enter the roundabout and take the 3rd exit onto Kaitov\u00e4yl\u00e4", "name": "Kaitov\u00e4yl\u00e4", "type": 7, "way_points": [12, 29]}, {"distance": 582.5, "duration": 80.5, "instruction": "Turn right onto Linnanmaantie", "name": "Linnanmaantie", "type": 1, "way_points": [29, 43]}, {"distance": 5619.6, "duration": 299.1, "instruction": "Turn sharp left", "name": "-", "type": 2, "way_points": [43, 97]}, {"distance": 389.1, "duration": 50.4, "instruction": "Keep right", "name": "-", "type": 13, "way_points": [97, 106]}, {"distance": 1135.5, "duration": 157.4, "instruction": "Keep right onto Kajaanintie", "name": "Kajaanintie", "type": 13, "way_points": [106, 128]}, {"distance": 221.8, "duration": 33.0, "instruction": "Continue straight onto Heikinkatu", "name": "Heikinkatu", "type": 6, "way_points": [128, 131]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at Heikinkatu, on the right", "name": "-", "type": 10, "way_points": [131, 131]}]}], "summary": {"distance": 9315.7, "duration": 786.9}, "way_points": [0, 131]}, "type": "Feature"});
+        geo_json_f70219282367e7df75ab71627067feb3.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_f70219282367e7df75ab71627067feb3.addTo(map_6de4542f628dea1656893d9b9797eb76);
+        
+    
+            var marker_542c7236ca682d68986a54a70b9490c1 = L.marker(
+                [65.062795, 25.472358],
+                {
+}
+            ).addTo(map_6de4542f628dea1656893d9b9797eb76);
+        
+    
+        var popup_5c597930dbb4d663e023e61eb4df2edb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c49d6f8092202f6e5cab2dd142a1f30 = $(`<div id="html_0c49d6f8092202f6e5cab2dd142a1f30" style="width: 100.0%; height: 100.0%;">Start: London</div>`)[0];
+                popup_5c597930dbb4d663e023e61eb4df2edb.setContent(html_0c49d6f8092202f6e5cab2dd142a1f30);
+            
+        
+
+        marker_542c7236ca682d68986a54a70b9490c1.bindPopup(popup_5c597930dbb4d663e023e61eb4df2edb)
+        ;
+
+        
+    
+    
+            var marker_3e67056271582f62d0108d887bf44aa0 = L.marker(
+                [65.013059, 25.485466],
+                {
+}
+            ).addTo(map_6de4542f628dea1656893d9b9797eb76);
+        
+    
+        var popup_b4a00e2480aeaa1653fb2d02db00091b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7f2d516eccd3dd8bd7afa80fa75489a = $(`<div id="html_a7f2d516eccd3dd8bd7afa80fa75489a" style="width: 100.0%; height: 100.0%;">End: Big Ben</div>`)[0];
+                popup_b4a00e2480aeaa1653fb2d02db00091b.setContent(html_a7f2d516eccd3dd8bd7afa80fa75489a);
+            
+        
+
+        marker_3e67056271582f62d0108d887bf44aa0.bindPopup(popup_b4a00e2480aeaa1653fb2d02db00091b)
+        ;
+
+        
+    
+</script>
+</html>
